@@ -1,0 +1,11 @@
+
+## Exercise 1: Pet
+1. Create `Pet` class with instance attributes `name` and `age`
+2. Create a `show()` method which will print `I am *name* and I am *age* years old.` such that name and age are `name` and `age` attributes
+3. Create classes `Dog` and `Cat` that inherits from `Pet`
+4. Add `speak()` method to both of these classes. `Cat` wll print `Meow` and `Dog` will print `Bark`
+5. Create `Dog` and `Cat` objects call `show()` and `speak()` methods for them.
+6. Now, add `speak()` to `Pet` class which will say `I don't know what I say`
+7. Create a `Pet` object and call the existing methods for it
+8. Now add an `__init__` method to `Cat` and add one extra attribute `color`
+9. Override `show()` method for the `Cat` and make it such that it print `I am *name* and I am *age* years old and I have *color* color.`
