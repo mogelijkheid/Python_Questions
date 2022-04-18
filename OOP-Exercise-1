@@ -8,4 +8,28 @@
 6. Now, add `speak()` to `Pet` class which will say `I don't know what I say`
 7. Create a `Pet` object and call the existing methods for it
 8. Now add an `__init__` method to `Cat` and add one extra attribute `color`
-9. Override `show()` method for the `Cat` and make it such that it print `I am *name* and I am *age* years old and I have *color* color.`
+9. Override `show()` method for the `Cat` and make it such that it print `I am *name* and I am *age* years old and I have *color* color
+
+
+
+
+
+class Pet:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def show(self):
+        print(f'i am {self.name} and i am{self.age} years old')
+    def speak(self):
+        print (f'i dont know what to say')
+class Dog(Pet):
+    def speak(self):
+        print('Bark')
+class Cat(Pet):
+    def __init__(self,name,age,color):
+        super().__init__(name,age)
+        self.color=color
+    def speak(self):
+        print('Meow')
+    def show(self):
+        print('the {} is {} years old and has {} color'.format(self.name,self.age,self.color))
